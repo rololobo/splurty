@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Splurty</title>
+  <title>Blurty</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -21,7 +21,7 @@
         <% end %>
     </div>
     <div class = "col-sm-4 hidden-xs slogan">
-      Splurting out unsolicited jokes since 2016.
+      Blurting out unsolicited one-liners since 2016.
     </div>
     <div class = "col-xs-8 col-xs-offset-1 col-sm-5 col-sm-offset-0 links">
       <!-- Button trigger modal -->
@@ -40,13 +40,13 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title=" id="myModalLabel">Contribute Your Quote</h4>
+          <h4 class="modal-title=" id="myModalLabel">Contribute Your One-Liner</h4>
         </div>
         <%= simple_form_for Quote.new do |f| %>
         <div class="modal-body">
-            <%= f.input :saying, label: "What quote do you want to add?", placeholder: "I had to stop drinking, cause I got tired of waking up in my car driving 90." %>
+            <%= f.input :saying, label: "What one-liner do you want to add?", placeholder: "I had to stop drinking, cause I got tired of waking up in my car driving 90." %>
             <br />
-            <%= f.input :author, label: "Who is the author of the quote?", placeholder: "Richard Pryor" %>
+            <%= f.input :author, label: "Which comedian said the one-liner?", placeholder: "Richard Pryor" %>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -78,7 +78,7 @@
       </div>
       <div class = "col-xs-12 col-sm-6 , footer-blurb">
         Valiantly coded in San Diego by <a href = "https://twitter.com/rosiehighsmith">Rosie Highsmith</a>.<br />
-        Build your own Splurty app <a href = "thefirehoseproject.com">here</a>.
+        Build your own Blurty app <a href = "thefirehoseproject.com">here</a>.
       </div>
     </div>
   </div>
