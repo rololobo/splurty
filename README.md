@@ -6,6 +6,8 @@ Blurty is a **postgreSQL powered** built with the **Ruby on Rails** framework. I
 
 ## Features
 
+- Allow users to contribute one-liners to be randomly generated to the homepage
+
 - Twitter Bootstrap 3 for CSS components
 
 - Git and Github for version control
