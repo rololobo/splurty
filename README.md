@@ -17,6 +17,3 @@ Blurty is a **postgreSQL powered** built with the **Ruby on Rails** framework. I
 ## App Snapshot
 
 ![alt tag](http://i.imgur.com/XDgbBfV.png)
-
--Rosie
-
