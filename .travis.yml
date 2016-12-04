@@ -1,5 +1,12 @@
 language: ruby
 rvm:
- - 2.2
- - jruby
- - rbx-2
+- 2.2.4
+before_install: gem update --remote bundler
+install:
+- bundle install --retry=3
+script:
+- bundle exec rspec
+deploy:
+  provider: heroku
+  api_key:
+    secure: a7fcc8dc759b086ce9cf96677fb563482363759cc20e73dd04c343c6ca7722aa6e60c821fd3f083814a7bad4411e23d71d34bf6a92ccca1072a980186050ee2f
