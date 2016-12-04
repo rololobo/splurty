@@ -5,6 +5,7 @@ before_install: gem update --remote bundler
 install:
 - bundle install --retry=3
 script:
+- bin/rake db:create db:migrate
 - bundle exec rspec
 deploy:
   provider: heroku
@@ -12,4 +13,3 @@ deploy:
     secure: e3988c75-0934-43dc-ac55-8819c6169cba
   app:
     production: blurty-rosie-highsmith
-    
